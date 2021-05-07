@@ -3,8 +3,8 @@
 A bash script that installs WordPress with the LAMP stack with one click.  
 ## Installation
 
-```git
-Get clone 
+```bash
+git clone https://github.com/thetrebelcc/Wordpress-Ubuntu-20-Install.git
 ```
 
 
