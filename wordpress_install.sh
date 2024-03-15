@@ -102,10 +102,12 @@ grep -A50 'table_prefix' $install_dir/wp-config.php > /tmp/wp-tmp-config
 /usr/bin/mysql -u root -e "GRANT ALL PRIVILEGES ON $db_name.* TO '$db_user'@'localhost';"
 ##### End WP Salts
 
-###### Begin Display generated passwords to log file.
-echo "Database Name: " $db_name
-echo "Database User: " $db_user
-echo "Database Password: " $db_password
-echo "Mysql root password: " $mysqlrootpass
-###### End Display generated passwords to log file.
+
+###### Begin Store credentials in creds.txt
+echo "Database Name: $db_name" > /root/creds.txt
+echo "Database User: $db_user" >> /root/creds.txt
+echo "Database Password: $db_password" >> /root/creds.txt
+echo "Mysql root password: $mysqlrootpass" >> /root/creds.txt
+###### End Store credentials in creds.txt
+
 
