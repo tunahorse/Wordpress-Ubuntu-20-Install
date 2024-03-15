@@ -104,7 +104,7 @@ grep -A50 'table_prefix' $install_dir/wp-config.php > /tmp/wp-tmp-config
 
 
 ###### Begin Store credentials in creds.txt
-echo "Database Name: $db_name" > /root/creds.txt
+echo "Database Name: $db_name" >> /root/creds.txt
 echo "Database User: $db_user" >> /root/creds.txt
 echo "Database Password: $db_password" >> /root/creds.txt
 echo "Mysql root password: $mysqlrootpass" >> /root/creds.txt
