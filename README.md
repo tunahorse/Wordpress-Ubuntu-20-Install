@@ -1,10 +1,14 @@
-# Wordpress_Ubuntu_20_Install
+# Wordpress_Ubuntu_Install
 
 A bash script that installs WordPress with the LAMP stack with one click.  
 ## Installation
 
 ```bash
 git clone https://github.com/thetrebelcc/Wordpress-Ubuntu-20-Install.git
+```
+
+```bash
+cd Wordpress-Ubuntu-20-Install
 ```
 
 
